@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="static/logo.png" width="80" height="50" class="me-2 img">
+            <span class="fw-bold text-nowrap company-name">SEC INGENIEROS S.A.S.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav mb-2 mb-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<style>
+    .navbar-nav .nav-link.active {
+        font-weight: bold;
+        color: #dac612 !important;
+    }
+
+    .navbar {
+        background: #f1f1f1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333 !important;
+        padding: 8px 12px;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+        border-bottom: 2px solid transparent;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: black !important;
+        border-bottom: 1px solid black;
+    }
+
+
+    .fixed-top {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .company-name {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+        .company-name {
+            font-size: 1.2rem;
+            /* Reducir tamaño del texto en pantallas pequeñas */
+        }
+
+        .img {
+            width: 60px;
+            height: 50px;
+            /* Reducir tamaño del logo en pantallas pequeñas */
+        }
+    }
+
+    @media (max-width: 390px) {
+        .company-name {
+            font-size: 0.9rem;
+            /* Reducir aún más el tamaño del texto */
+        }
+
+        .img {
+            width: 48px;
+            height: 38px;
+            /* Reducir tamaño del logo en pantallas pequeñas */
+        }
+    }
+</style>
