@@ -1,17 +1,21 @@
 body {
-    padding-top: 86px; 
+    padding-top: 77px;
 }
 
 @media (max-width: 576px) {
     body {
-        padding-top: 76px; 
+        padding-top: 67px;
     }
 }
 
 @media (max-width: 390px) {
     body {
-        padding-top: 56px; 
+        padding-top: 56px;
     }
+}
+
+p {
+    font-size: 19px;
 }
 
 .title {
@@ -19,7 +23,7 @@ body {
     color: white;
     display: flex;
     margin: auto;
-    padding: 260px 0;
+    padding: 280px 0;
     justify-content: center;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -43,7 +47,6 @@ body {
     justify-content: safe;
     margin-top: 50px;
     font-variant: normal;
-    font-size: 20px;
 }
 
 /* Sección de contacto */
@@ -127,3 +130,12 @@ body {
     border-right: 2px solid #ddd;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .text-justify {
+        text-align: left;
+    }
+}

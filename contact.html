@@ -15,31 +15,30 @@
   <body>
     <div id="navbar"></div>
 
-    <section class="container-fluid p-0">
-      <div class="row g-0 contact p-0">
-        <div class="col-md-8 align-items-center justify-content-center text-white contact-banner">
-          <div class="text-center">
-            <h1 class="fw-bold">CONTÁCTANOS</h1>
-          </div>
+    <section class="container-fluid p-0 m-0">
+      <div class="row g-0 contact m-0 p-0">
+        <!-- 📌 Banner -->
+        <div class="col-md-8 d-flex align-items-center justify-content-center text-white contact-banner">
+          <h1 class="fw-bold">CONTÁCTANOS</h1>
         </div>
 
-        <div class="col-md-4 info d-flex flex-column p-0">
-          <div class="text-white p-4 d-flex flex-column justify-content-center text-start flex-grow-1">
-            <h4 class="fw-bold text-center">Horario</h4>
-            <ul class="list">
+        <!-- 📌 Información -->
+        <div class="col-md-4 info d-flex flex-column">
+          <div class="info1 p-4">
+            <h4 class="fw-bold">Horario</h4>
+            <ul>
               <li>Lunes a Viernes: 7am - 5pm</li>
               <li>Sábados: 7am - 12:30pm</li>
             </ul>
-            <hr class="border border-secondary my-4 w-100 mx-auto">
-            <h4 class="fw-bold text-center">Contacto</h4>
-            <ul class="list">
-              <li>ventas@cadenasycomplementos.com</li>
-              <li>323-580-04-33</li>
+            <hr class="border border-secondary my-4">
+            <h4 class="fw-bold">Contacto</h4>
+            <ul>
+              <li>Email: sec.ingenieria@hotmail.com</li>
+              <li>Tel: +57 310 5157266</li>
             </ul>
           </div>
-
-          <div class="cotize py-5">
-            <a href="https://wa.me/123456789" class="btn btn-warning btn-lg text-dark">Cotización online</a>
+          <div class="cotize py-4 px-4 m-0">
+            <a href="https://wa.me/3105757266" class="btn btn-warning btn-lg text-dark">Cotización online</a>
           </div>
         </div>
       </div>
@@ -60,24 +59,25 @@
   .cotize {
     background-color: #002f87;
     color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 150px;
   }
 
   .contact {
-    height: 600px;
-  }
-
-  .info {
-    height: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .contact-banner {
     background: url('static/compresores.jpg') center/cover no-repeat;
     position: relative;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .contact-banner::before {
@@ -92,14 +92,60 @@
 
   .contact-banner h1 {
     position: relative;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  .contact-banner .bar {
-    display: inline-block;
-    width: 8px;
-    height: 40px;
-    background-color: #002f87;
-    margin-right: 10px;
+  .info {
+    color: white;
+    height: 600px;
+  }
+
+  .info h4 {
+    text-align: center;
+  }
+
+  .info li {
+    text-align: start;
+  }
+
+  .info1 {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cotize a {
+    width: 100%;
+    display: block;
+  }
+
+  /* 🔹 RESPONSIVIDAD */
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+    }
+
+    .contact-banner {
+      min-height: 250px;
+    }
+
+    .contact-banner h1 {
+      font-size: 2rem;
+    }
+
+    .cotize {
+      padding: 20px;
+    }
+
+    .info {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .contact-banner h1 {
+      font-size: 1.8rem;
+    }
   }
 </style>
